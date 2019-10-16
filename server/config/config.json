@@ -1,26 +1,28 @@
 {
   "development": {
-    "username": "root",
+    "username": "postgres",
     "password": null,
-    "database": "database_development",
+    "database": "til-server-dev",
     "host": "127.0.0.1",
-    "dialect": "mysql",
+    "port": 5432,
+    "dialect": "postgres",
     "operatorsAliases": false
   },
   "test": {
     "username": "root",
     "password": null,
-    "database": "database_test",
+    "database": "til-server-test",
     "host": "127.0.0.1",
-    "dialect": "mysql",
+    "port": 5432,
+    "dialect": "postgres",
     "operatorsAliases": false
   },
   "production": {
     "username": "root",
     "password": null,
-    "database": "database_production",
+    "database": "til-server-prod",
     "host": "127.0.0.1",
-    "dialect": "mysql",
-    "operatorsAliases": false
+    "port": 5432,
+    "dialect": "postgres",
   }
 }
