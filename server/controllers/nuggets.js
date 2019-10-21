@@ -7,7 +7,8 @@ module.exports = {
       const nugget = Nugget.create({
         title,
         description,
-        externalLink
+        externalLink,
+        userId: req.params.userId
       })
       res.status(201).send(nugget)
     } catch (error) {
