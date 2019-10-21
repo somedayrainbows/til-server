@@ -1,4 +1,5 @@
 const usersController = require('../controllers/').users;
+const nuggetsController = require('../controllers/').nuggets;
 
 module.exports = (app) => {
 
@@ -9,4 +10,6 @@ module.exports = (app) => {
     app.post('/api/users', usersController.create);
 
     app.get('/api/users', usersController.list);
+
+    app.post('/api/nuggets/:userId/nuggets', nuggetsController.create)
 }
